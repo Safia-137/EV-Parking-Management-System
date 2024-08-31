@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Bookings</title>
+</head>
+<body>
+  <h1>My Bookings</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Slot</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% bookings.forEach(booking => { %>
+        <tr>
+          <td><%= booking.startTime %></td>
+          <td><%= booking.endTime %></td>
+          <td><%= booking.slot %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</body>
+</html>
